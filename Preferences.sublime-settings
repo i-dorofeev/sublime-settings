@@ -1,0 +1,25 @@
+{
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Rust",
+		// "Vintage",
+/*"RustFmt",*/
+/*"RustFmt",*/
+/*"Rust",*/
+/*"RustFmt",*/
+/*"Switch Window",*/
+/*"Rust",*/
+/*"LSP-rust-analyzer",*/
+/*"TodoReview",*/
+/*"SideBarEnhancements",*/
+/*"Rust",*/
+/*"Rust",*/
+/*"View Bookmarks",*/
+/*"Swift Next",*/
+	],
+	"index_files": true,
+	"vintage_start_in_command_mode": true,
+	"highlight_line": true,
+	"color_scheme": "Mariana.sublime-color-scheme",
+}

@@ -1,0 +1,159 @@
+[
+	// Run Code Action
+    {
+        "keys": ["command+."],
+        "command": "lsp_code_actions",
+        "context": [{"key": "lsp.session_with_capability", "operand": "codeActionProvider"}]
+    },
+
+    // Jump to next Diagnostic in Tab
+    {
+        "keys": ["command+,"],
+        "command": "lsp_next_diagnostic",
+        "context": [{"key": "setting.lsp_active"}]
+    },
+
+    {
+    	"keys": ["command+j"],
+    	"command": "move",
+    	"args": {
+    		"by": "lines",
+    		"forward": "true"
+    	}
+    },
+
+    // switch to a neighboring split
+    {
+    	"keys": ["command+k", "command+k"],
+    	"command": "focus_neighboring_group"
+    },
+
+    // navigate menu down
+    {
+    	"keys": ["super+j"],
+    	"command": "move",
+    	"args": {
+	    	"by": "lines",
+	    	"forward": true
+	    },
+    	"context": [
+    		{ "key": "overlay_visible", "operator": "equal", "operand": true },
+    		{ "key": "setting.is_widget", "operator": "equal", "operand": true },
+    		{ "key": "panel_has_focus", "operator": "equal", "operand": false }
+	    ]
+    },
+
+    {
+        "keys": ["super+j"],
+        "command": "move",
+        "args": {
+            "by": "lines",
+            "forward": true
+        },
+        "context": [
+            { "key": "auto_complete_visible", "operator": "equal", "operand": true },
+        ]
+    },
+
+    // navigate menu up
+    {
+        "keys": ["super+k"],
+        "command": "move",
+        "args": {
+            "by": "lines",
+            "forward": false
+        },
+        "context": [
+            { "key": "overlay_visible", "operator": "equal", "operand": true },
+            { "key": "setting.is_widget", "operator": "equal", "operand": true },
+            { "key": "panel_has_focus", "operator": "equal", "operand": false }
+        ]
+    },
+
+    {
+        "keys": ["super+k"],
+        "command": "move",
+        "args": {
+            "by": "lines",
+            "forward": false
+        },
+        "context": [
+            { "key": "auto_complete_visible", "operator": "equal", "operand": true },
+        ]
+    },
+
+    {
+        "keys": ["super+ç"],
+        "command": "rust_message_popup",
+        "context": [
+            { "key": "selector", "operator":"equal", "operand": "source.rust" }
+        ]
+    },
+
+    {
+        "keys": ["escape"],
+        "command": "hide_popup",
+        "context": [
+            { "key": "selector", "operator":"equal", "operand": "source.rust" },
+            { "key": "rust_has_messages", "operator": "equal", "operand": true },
+            { "key": "popup_visible", "operator": "equal", "operand": true }
+        ]
+    },
+
+    {
+        "keys": ["command+n"],
+        "command": "goto_symbol_in_project",
+    },
+
+    // otherwise you'll have to press Esc twice to leave insert mode when
+    // autocomplete popup is visible
+    {
+        "keys": ["escape"],
+        "command": "exit_insert_mode",
+        "context": [
+            { "key": "setting.command_mode", "operand": false },
+            { "key": "setting.is_widget", "operand": false },
+            { "key": "setting.vintage_ctrl_keys" }
+        ]
+    },
+
+    {
+        "keys": ["alt+left"],
+        "command": "jump_back"
+    },
+
+    {
+        "keys": ["alt+right"],
+        "command": "jump_forward"
+    },
+
+    {
+        "keys": ["alt+b"],
+        "command": "lsp_symbol_definition"
+    },
+
+    // lsp_toggle_inlay_hints
+    {
+        "keys": ["alt+q"],
+        "command": "lsp_toggle_inlay_hints"
+    },
+
+    // toggle_inline_diff
+    {
+        "keys": ["alt+w"],
+        "command": "toggle_inline_diff"
+    },
+
+    // lsp_symbol_references
+    {
+        "keys": ["alt+n"],
+        "command": "lsp_symbol_references"
+    },
+
+    {
+        "keys": ["command+w"],
+        "command": "expand_selection",
+        "args": {"to": "smart"}
+    }
+]
+

@@ -1,0 +1,26 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"FindKeyConflicts",
+		"GitGutter",
+		"Kotlin",
+		"LSP",
+		"LSP-file-watcher-chokidar",
+		"LSP-kotlin",
+		"LSP-rust-analyzer",
+		"Package Control",
+		"Rust Enhanced",
+		"RustFmt",
+		"SideBarEnhancements",
+		"Swift Next",
+		"Switch Window",
+		"Terminus",
+		"TodoReview",
+		"TOML",
+		"View Bookmarks",
+	],
+}

@@ -1,0 +1,5 @@
+{
+	"show_errors_inline": true,
+	"rust_phantom_style": "popup",
+	"rust_region_style": "squiggly_underline"
+}

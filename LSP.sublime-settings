@@ -1,0 +1,16 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
+{
+	"show_code_lens": "phantom",
+    "show_code_actions": "bulb",
+	"lsp_format_on_save": true,
+	"lsp_format_on_paste": true,
+	"lsp_code_actions_on_save": {
+		"source.organizeImports": true
+	},
+	"show_diagnostics_count_in_view_status": true,
+	"show_inlay_hints": true,
+	"semantic_highlighting": true,
+	"show_multiline_document_highlights": false,
+	"show_diagnostics_severity_level": 0,
+    "diagnostics_panel_include_severity_level": 0,
+}
