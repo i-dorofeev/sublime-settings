@@ -8,7 +8,7 @@
 
     // Jump to next Diagnostic in Tab
     {
-        "keys": ["command+,"],
+        "keys": ["command+l"],
         "command": "lsp_next_diagnostic",
         "context": [{"key": "setting.lsp_active"}]
     },
@@ -43,18 +43,6 @@
 	    ]
     },
 
-    {
-        "keys": ["super+j"],
-        "command": "move",
-        "args": {
-            "by": "lines",
-            "forward": true
-        },
-        "context": [
-            { "key": "auto_complete_visible", "operator": "equal", "operand": true },
-        ]
-    },
-
     // navigate menu up
     {
         "keys": ["super+k"],
@@ -70,6 +58,21 @@
         ]
     },
 
+    // navigate autocomplete suggestion down
+    {
+        "keys": ["super+j"],
+        "command": "move",
+        "args": {
+            "by": "lines",
+            "forward": true
+        },
+        "context": [
+            { "key": "auto_complete_visible", "operator": "equal", "operand": true },
+        ]
+    },
+
+    
+    // navigate autocomplete suggestion up
     {
         "keys": ["super+k"],
         "command": "move",
@@ -150,6 +153,7 @@
         "command": "lsp_symbol_references"
     },
 
+    // expand selection
     {
         "keys": ["command+w"],
         "command": "expand_selection",
